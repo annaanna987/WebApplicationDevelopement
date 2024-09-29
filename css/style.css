@@ -1,0 +1,65 @@
+.header {
+    width: auto;
+    background-color: rgb(139, 221, 176);
+    height: 10%;
+    text-align: left;
+}
+.header a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.header img{
+    margin-top: 7px;    
+    margin-right: 15px;
+}
+
+.userLogo{
+    float: right;
+}
+
+.PostArea {
+    width:500px;
+    height: 300px;
+    margin:auto;
+}
+
+.userLogoPost {
+    
+}
+
+.postPicture{
+    width: 100%;
+    height: 100%;
+}
+
+.centerArea{
+    width:100%;
+    height:80%;
+    float:none;
+}
+
+.leftPane {
+    background-color: navy;
+    float:left;
+    width: 20%;
+    height: 100%;
+}
+.centerPane {
+    background-color: aquamarine;
+    float: left;
+    width: 60%;
+    height: 100%;
+}
+.rightPane {
+    background-color: navy;
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+.footer {
+    width: 100%;
+    height: 10%;
+    background-color: rgb(196, 13, 37);
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
