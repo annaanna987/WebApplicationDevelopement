@@ -8,23 +8,30 @@
     margin-left: 10px;
     margin-right: 10px;
 }
-.header img{
-    margin-top: 7px;    
-    margin-right: 15px;
-}
 
 .userLogo{
     float: right;
+    margin-top: 7px;    
+    margin-right: 15px;
 }
 
 .PostArea {
     width:500px;
     height: 300px;
     margin:auto;
+    stroke: dodgerblue;
+    padding-top: 50px;
 }
+p {
+    display: inline;
+}
+/*
+    display: block;
+*/
 
 .userLogoPost {
-    
+    display: block;
+    position: relative;
 }
 
 .postPicture{
@@ -32,10 +39,10 @@
     height: 100%;
 }
 
+
 .centerArea{
     width:100%;
     height:80%;
-    float:none;
 }
 
 .leftPane {
@@ -49,6 +56,7 @@
     float: left;
     width: 60%;
     height: 100%;
+    overflow: scroll;
 }
 .rightPane {
     background-color: navy;
@@ -57,6 +65,7 @@
     height: 100%;
 }
 .footer {
+    position: relative;
     width: 100%;
     height: 10%;
     background-color: rgb(196, 13, 37);
