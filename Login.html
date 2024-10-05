@@ -5,27 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css/postStyle.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="header">
+    <div class="headerPostLogin">
         <a href="index.html" class="nav-link" id="homeLink">Home</a>
-        <a href="addPost.html" class="nav-link" id="addPostLink">Add Post</a>
+        <p class="linkPic"><a href="Login.html"><img src="img/userLogoDefault.png"></a></p>
     </div>
-
-    <form action="index.html" class="container">
+    <main id="login">
+    <form action="index.html" class="form-container">
         <h1>Welcome to PostIt</h1>
-        <a href="" class="nav-link" >Create an account</a>
-        <p>or Please log in</p>
-        
-        <p>
-            <input type="text" class="input-field" placeholder="Email" id="email">
-            <input type="password" class="input-field" placeholder="Password" id="password">
-        </p>
-        
-        <button class="login-button">Log in</button>
-        
-        <a href="" class="link">Forgot password?</a>
+        <a href="" class="accAndforgotLinks" >Create an account</a>
+        <p>or<br>Please log in</p>
+        <p><input type="text" class="input-field" placeholder="Email" id="email" required></p>
+        <p><input type="password" class="input-field" placeholder="Password" id="password" required></p>
+        <p><button id="login-button">Log in</button></p>        
+        <a href="" class="accAndforgotLinks">Forgot password?</a>
     </form>
+    </main>
 </body>
 </html>

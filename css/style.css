@@ -62,14 +62,12 @@ aside{
     display: flex;
     flex-direction: column;
 }
-
 .postHeader{
     border-radius: 50px;
     background-color: #73AD21;
     display: flex;
     justify-content: space-around;
-}
-            
+}            
 article{
     width: 70%;
     margin-top: 50px;
@@ -77,7 +75,6 @@ article{
     margin-right: auto;
     border:1px dotted #73AD21
 }
-
 .postTime{
     align-self: flex-end;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -94,13 +91,20 @@ article{
     background-color: darkslategrey;
     color: crimson;
 }
-/* Form fields */
+/* Form setups contained in main sections of addpost.html and Login.html*/
 #addPost{
+    display: flex;
+    justify-content: center;
+}
+#login{
     display: flex;
     justify-content: center;
 }
 
 .form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -110,19 +114,19 @@ article{
 }
 
 .form-field {
+    display: flex;
+    justify-content: center;
     margin-bottom: 15px;
 }
-
-
 textarea, input[type="file"] {
+    
     width: 100%;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
 button {
-    width: 100%;
+    width: 40%;
     padding: 10px;
     background-color: #2c3e50;
     color: white;
@@ -130,7 +134,19 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
-
 button:hover {
     background-color: #1456d9;
+}
+.accAndforgotLinks{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 30px;
+    font-size: 25px;
+    color: aqua;
+}
+p, h1, label {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
