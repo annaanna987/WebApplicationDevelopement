@@ -6,98 +6,16 @@
         <meta name="keywords" content="HTML, CSS, JS">
         <meta name="Group BR" content="WAD2024">
         <title>GroupBR_HW</title>
-        <style>
-            body{
-                display: flex;
-                flex-direction: column;
-                background-color: aquamarine;
-            }
-            .navHeader{
-                display: flex;
-                flex-wrap:nowrap;
-                justify-content:space-around;                    
-                
-                background-color:dimgray;
-                border-radius: 10px;
-                border: 2px solid #73AD21;
-                width: 100%;
-            }
-            .link{
-                font-size: 32px;
-                align-self: flex-start;
-            }
-            #links{
-                display: flex;
-            }
-            .linkPic{
-                align-self: flex-end;
-            }
-            .userLogo{        
-                display: flex;        
-                width: 64px;
-            }
-
-            
-
-            main{
-                display: flex;
-                flex-direction: row;
-                width: 100%;
-                padding-top: 5px;
-            }
-            aside{
-                padding: 30px;
-                height: auto;
-                width: 15%;
-                background-color: crimson;
-                border-radius: 20px;                
-            }
-            #postsContainer{
-                display: flex;
-                flex-direction: column;
-            }
-            
-            .postHeader{
-                border-radius: 50px;
-                background-color: #73AD21;
-                display: flex;
-                justify-content: space-around;
-            }
-                        
-            article{
-                width: 70%;
-                margin-top: 50px;
-                margin-left: auto;
-                margin-right: auto;
-                border:1px dotted #73AD21
-            }
-            
-            .postTime{
-                align-self: flex-end;
-                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                font-size: 20px;            
-            }
-            .postPicture{
-                width: 100%;
-                border-radius: 20px;
-                margin-top: 10px;
-            }
-            .postText{
-                font-family:Arial, Helvetica, sans-serif;
-                font-size: 24px;
-                background-color: darkslategrey;
-                color: crimson;
-            }
-        </style>   
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>        
         <header class="navHeader">
                 <div id="links">
                     <p class="link"><a href="index.html">Home</a></p>
                     <p class="link">|</p>
-                    <p class="link"><a class="link" href="addPost.html">addPost</a></p>
+                    <p class="link"><a href="addPost.html">addPost</a></p>
                 </div>        
-                <p class="linkPic"><a class="link" href="Login.html"><img class="userLogo" src="img/userLogoDefault.png"></a></p>            
+                <p class="linkPic"><a href="Login.html"><img class="userLogo" src="img/userLogoDefault.png"></a></p>            
         </header>    
     <main>
         <aside></aside>
@@ -119,106 +37,6 @@
             </article>
         </div>
         <aside></aside>
-    </main>
-
-<!-- Extra materials:
-
-        <h1>Heading1</h1>
-        <p class="P1">This is Paragraph 1</p>
-        <div><span>Nested tags!</span></div>
-
-        <h2> Course Description: </h2>
-        <div> This course will introduce students to key concepts …. </div>
-        <div> This is a div </div> This is a <span> span </span>
-        
-        <b> This is a bold text </b>
-        <strong> This is a strong text </strong> 
-        <i> This is an italic text </i> 
-        <em> This is an emphasized text </em>
-        This is a <sub> subscript text </sub>
-        This is a <sup> superscript text </sup>
-        This is a <small> Small </small> formatting.
-        This is a <mark> Marked </mark> formatting.
-        This is a <del> blue </del> red color.
-        This <ins> text </ins> is inserted.
-
-        <ul>
-            <li>Coffee</li>
-            <li> Tea </li>
-            <li> Milk </li>
-        </ul>
-
-        <ol>
-            <li> Coffee </li>
-            <li> Tea </li>
-            <li> Milk </li>
-        </ol>
-
-        <dl>
-            <dt> Coffee </dt>
-            <dd> is a drink</dd>
-        </dl>
-
-        <table>
-            <tr>
-            <th> First name </th>
-            <th> Last name</th>
-            <th> Age </th>
-            </tr>
-            <tr>
-            <td> Sarah </td>
-            <td> Jones </td>
-            <td> 21 </td>
-            </tr>
-        </table>
-            
-        <audio controls>
-            <source src="audio1.ogg" type="audio/ogg">
-            <source src="audio1.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-        
-        <video width="320" height="240" controls>
-            <source src="movie.mp4" type="video/mp4">
-            <source src="movie.ogg" type="video/ogg">
-            Your browser does not support the video tag.
-        </video>
-
-        <iframe src=" https://www.google.com/maps/..." height=“300" width="300"></iframe>
-
-        <form action= "/page.php" method="get">
-            <label for="fname">First name: </label><br>
-            <input type="text" name="fname"><br>
-            <label for=“lname">Last name: </label><br>  
-            <input type="text" name="lname"><br>
-            <input type="submit" value="Submit">
-        </form>
-
-            <input type="text">
-            <input type="password">
-            <input type="checkbox">
-            <input type="radio">
-            <input type="file">
-            <input type="hidden">
-            <input type="submit">
-            <input type="reset">
-            <input type="number">
-            <input type="date">
-            <input type="time">
-            <input type="email" name="email" required placeholder="Enter a valid email" value="o@ut.ee" minlength ="8" maxlength ="20" autofocus> 
-            <input type="color" name="color">
-            <input type="range" name="points" min="0" max="10">
-            <input type="number" name="number" min="0" max="10" step="2">
-
-        <p>press<kbd>Ctrl + S </kbd>to save</p>
-        <p>press<samp> F1 to continue</samp></p>
-        <pre>
-        <code>
-            x = 5;
-            y = 6;
-            z = x + y;
-        </code>
-        </pre>
--->        
+    </main>   
     </body>
 </html>
