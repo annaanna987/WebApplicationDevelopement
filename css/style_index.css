@@ -1,0 +1,123 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+/* Header  section */
+.navHeader{
+    display: flex;
+    justify-content:space-between;                    
+    
+    background-color:rgb(31, 63, 43);
+    border-radius: 10px;
+    border: 2px solid #747474;
+    box-shadow: 2px 3px 3px burlywood;
+}
+header > div {
+    display: flex;
+    margin-left: 20px;
+}
+div > p{
+    font-size: 32px;
+    align-self: flex-start;
+    text-decoration: none;
+}
+div > p a{    
+    color: #fac85c;
+    text-decoration: none;
+}
+div > p a:hover{
+    background-color: darkslategrey;
+    color:#73AD21;
+}
+header > p{
+    align-self: flex-end;
+}
+.userLogo{        
+    display: flex;        
+    width: 64px;
+    margin-right: 20px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 5px;
+    justify-content: center;
+}
+aside{
+    display: flex;
+    padding: 30px;
+    height: auto;
+    width: 15%;
+    background-color: rgb(14, 146, 118);
+    border-radius: 20px;
+    box-shadow: 4px 3px 3px rgb(17, 12, 12);   
+}
+#postsContainer{
+    display: flex;
+    flex-direction: column;
+}
+article{
+    width: 70%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border:1px dotted #73AD21;
+    border-radius: 50px;
+    box-shadow: 4px 3px 3px rgb(17, 12, 12);
+}
+article > header{   
+    display: flex;
+    justify-content: space-between; 
+    border-radius: 50px;
+    background-color: #73AD21;   
+    box-shadow: 2px 3px 3px burlywood;
+}     
+header ~ p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    background-color:rgba(0, 0, 0, 0.1);
+    color: navy;
+    text-align: left;
+}
+header > img{    
+    height: 32px;
+    margin-left: 32px;
+    margin-top: 16px;
+}
+.postTime{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin-right: 20px;
+    color: #FFF;
+    background-color:#73AD21;   
+}
+article > img{
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 2px 3px 3px burlywood;
+}
+.thumbUp{
+    display: flex;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 32px;
+    box-shadow: 2px 3px 3px rgb(17, 12, 12);
+}
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #2c3e50;
+    margin-top: 5px;
+    border-radius: 20px;
+    font-size: 32px;  
+}
+footer > p{
+    color:#7a8bed;
+}
+
+
