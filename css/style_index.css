@@ -1,7 +1,7 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: #f4f4f4;
+    background-color: #535c07;
     font-family: Arial, sans-serif;
 }
 /* Header  section */
@@ -51,7 +51,7 @@ aside{
     padding: 30px;
     height: auto;
     width: 15%;
-    background-color: rgb(14, 146, 118);
+    background-color: rgb(63, 219, 71);
     border-radius: 20px;
     box-shadow: 4px 3px 3px rgb(17, 12, 12);   
 }
@@ -74,18 +74,24 @@ article > header{
     border-radius: 50px;
     background-color: #73AD21;   
     box-shadow: 2px 3px 3px burlywood;
-}     
-header ~ p{
+}
+
+#userInfo ~ p{
+    display: flex;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 32px;
-    background-color:rgba(0, 0, 0, 0.1);
     color: navy;
     text-align: left;
 }
-header > img{    
-    height: 32px;
-    margin-left: 32px;
-    margin-top: 16px;
+#userInfo > img{    
+    display: flex;
+    height: 48px;
+    margin-left: 10px;
+    margin-top: 24px;
+}
+header ~ p{
+    font-size: 28px;
+    margin-left: 25px;
 }
 .postTime{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -100,12 +106,15 @@ article > img{
     margin-top: 10px;
     box-shadow: 2px 3px 3px burlywood;
 }
+article > p {
+    color:#73AD21;
+}
 .thumbUp{
     display: flex;
     margin-left: 50px;
     margin-bottom: 20px;
     width: 32px;
-    box-shadow: 2px 3px 3px rgb(17, 12, 12);
+    box-shadow: 2px 3px 3px #73AD21;
 }
 footer{
     display: flex;

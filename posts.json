@@ -1,0 +1,37 @@
+[
+    {
+        "postId": 1,
+        "posterName": "MathiasK",
+        "postTime": "Oct 2, 2024",
+        "postText": "Sunset at Bixabay",
+        "postImg" : "img/pexels-pixabay-289586.jpg"
+    },
+    {
+        "postId": 2,
+        "posterName": "ServerForge235",
+        "postTime": "Sept 27, 2024",
+        "postText": "Server maintance scheduled for tomorrow late night. 3 day testing window opened from tomorrow morning to test new configuration.",
+        "postImg" : ""
+    },
+    {
+        "postId": 3,
+        "posterName": "Veronica V.",
+        "postTime": "Sept 20, 2024",
+        "postText": "Looking ekstra members for lab on Tarkvaratehnika. Contact me through phone 544335634556 or find me slack please on Tarkvaratehnika 2024 workspace.",
+        "postImg" : ""
+    },
+    {
+        "postId": 4,
+        "posterName": "Philip J.",
+        "postTime": "Sept 19, 2024",
+        "postText": "Met a squirrel doing on about his business during my hike on woods. Wanted to share :]",
+        "postImg" : "img/squirrel.webp"
+    },
+    {
+        "postId": 5,
+        "posterName": "Peter Forest",
+        "postTime": "Sept 4, 2024",
+        "postText": "Looking another student with car to share a ride with to Tallinn. Besides company, willing to split the gas bill of course.",
+        "postImg" : ""
+    }
+]
