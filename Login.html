@@ -5,13 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <script type="text/javascript" src="js/dropdown.js"></script>
     <link rel="stylesheet" href="css/style_login.css">
 </head>
 <body>
-    <div class="headerPostLogin">
-        <a href="index.html" class="nav-link" id="homeLink">Home</a>
-        <p class="linkPic"><a href="Login.html"><img src="img/userLogoDefault.png"></a></p>
-    </div>
+    <!-- Navigation Bar -->
+    <header class="navHeader">
+        <div>
+            <p><a href="index.html">Home</a></p>
+            <p>|</p>
+            <p><a href="addPost.html">addPost</a></p>
+        </div>        
+        <div class="dropdown">
+            <a href="Login.html" class="userLogo" id="userLogo">
+                <img class="userLogo" src="img/userLogoDefault.png" alt="User Logo">
+            </a>
+            <div class="dropdown-content" id="dropdownMenu">
+                <a href="Login.html"><p class="userName">Prime User</p></a>
+                <p class="userEmail">pm_01@users.net</p>
+                <a href="index.html">Logout</a>
+            </div>
+        </div>
+    </header>
     <main id="login">
     <form action="index.html" class="form-container">
         <h1>Welcome to PostIt</h1>

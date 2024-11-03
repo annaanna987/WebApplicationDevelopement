@@ -4,16 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Post</title>
+    <script type="text/javascript" src="js/dropdown.js"></script>
     <link rel="stylesheet" href="css/style_addPost.css">
 </head>
 <body>
     <!-- Navigation Bar -->
-    <div class="headerPostLogin">
-        <!--Cant figure out how to make home button active to navigate to actual index.html-->
-        <a href="index.html" class="nav-link" id="homeLink">Home</a>
-        <p class="linkPic"><a href="Login.html"><img src="img/userLogoDefault.png"></a></p>
-    </div>
-
+    <header class="navHeader">
+        <div>
+            <p><a href="index.html">Home</a></p>
+            <p>|</p>
+            <p><a href="addPost.html">addPost</a></p>
+        </div>        
+        <div class="dropdown">
+            <a href="Login.html" class="userLogo" id="userLogo">
+                <img class="userLogo" src="img/userLogoDefault.png" alt="User Logo">
+            </a>
+            <div class="dropdown-content" id="dropdownMenu">
+                <a href="Login.html"><p class="userName">Prime User</p></a>
+                <p class="userEmail">pm_01@users.net</p>
+                <a href="index.html">Logout</a>
+            </div>
+        </div>
+    </header>
+    
     <!-- Form Section -->
     <main id="addPost">
     <div class="form-container">

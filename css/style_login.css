@@ -1,26 +1,85 @@
-#addPost{
+body{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    background-color: #1e5f21;
+    font-family: Arial, sans-serif;
 }
+
+
+
 #login{
     display: flex;
     justify-content: center;
 }
-.headerPostLogin {
+
+/* Header  section */
+.navHeader{
     display: flex;
-    justify-content: space-between;
-    background-color: #ddd;
-    padding: 10px 20px;
+    justify-content:space-between;                    
+    
+    background-color:rgb(31, 63, 43);
+    border-radius: 10px;
+    border: 2px solid #747474;
+    box-shadow: 2px 3px 3px burlywood;
 }
-.nav-link {
+header > div {
+    display: flex;
+    margin-left: 20px;
+}
+div > p{
+    font-size: 32px;
+    align-self: flex-start;
     text-decoration: none;
-    padding: 10px;
-    background-color: #ccc;
+}
+div > p a{    
+    color: #fac85c;
+    text-decoration: none;
+}
+div > p a:hover{
+    background-color: darkslategrey;
+    color:#73AD21;
+}
+header > p{
+    align-self: flex-end;
+}
+.userLogo{        
+    display: flex;        
+    width: 72px;
+    height: 72px;
+    margin-right: 20px;
+    margin-top: 8px;
+}
+/* Dropdown menu on navigation header */
+.dropdown {
+    display: flex;
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
     border-radius: 5px;
+    
+    width: 250px;
 }
-.nav-link:hover {
-    background-color: #7a8bed; /* Hover background color change */
+.dropdown-content.show {
+    display: block;
+    left: -150px;
 }
+.dropdown-content p, .dropdown-content a {
+    margin-left: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+}
+.dropdown-content a:hover {
+    background-color: darkslategrey;
+    color: #73AD21;
+}
+/**Form section**/
 .form-container {
     display: flex;
     justify-content: center;

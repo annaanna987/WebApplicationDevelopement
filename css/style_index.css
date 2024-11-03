@@ -1,7 +1,7 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: #535c07;
+    background-color: #c5d3d2;
     font-family: Arial, sans-serif;
 }
 /* Header  section */
@@ -36,9 +36,12 @@ header > p{
 }
 .userLogo{        
     display: flex;        
-    width: 64px;
+    width: 72px;
+    height: 72px;
     margin-right: 20px;
+    margin-top: 8px;
 }
+/**Main content section**/
 main{
     display: flex;
     flex-direction: row;
@@ -107,7 +110,8 @@ article > img{
     box-shadow: 2px 3px 3px burlywood;
 }
 article > p {
-    color:#73AD21;
+    color:#0b4a4d;
+    font-weight: 600;
 }
 .thumbUp{
     display: flex;
@@ -128,36 +132,32 @@ footer{
 footer > p{
     color:#7a8bed;
 }
-
-
+/** Dropdown menu on navigation header**/
 .dropdown {
+    display: flex;
     position: relative;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
     background-color: #f9f9f9;
-    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 5px;
+    
+    width: 250px;
 }
-
 .dropdown-content.show {
     display: block;
+    left: -150px;
 }
-
-.dropdown-content p,
-.dropdown-content a {
-    padding: 10px;
-    margin: 0;
+.dropdown-content p, .dropdown-content a {
+    margin-left: 20px;
     color: black;
     text-decoration: none;
+    font-size: 24px;
 }
-
 .dropdown-content a:hover {
     background-color: darkslategrey;
     color: #73AD21;

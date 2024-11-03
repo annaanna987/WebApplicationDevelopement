@@ -1,5 +1,7 @@
-    // Funktsioon, mis toggleb (vahetab) rippmenüü nähtavust
-    function toggleDropdown(event) {
+window.onload = function() {
+
+ // Funktsioon, mis toggleb (vahetab) rippmenüü nähtavust
+ function toggleDropdown(event) {
     event.preventDefault(); // Takista linki vaikimisi toimingut
     const dropdownMenu = document.getElementById('dropdownMenu');
 
@@ -20,3 +22,4 @@ window.addEventListener('click', function(event) {
         dropdownMenu.classList.remove('show'); // Eemalda 'show' klass, et rippmenüü sulgeda
     }
 });
+}
