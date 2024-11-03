@@ -1,9 +1,9 @@
 window.onload = function() {
 /* Fetch API */
-     //fetch('https://jsonplaceholder.typicode.com/posts')
+     //fetch('https://api.jsonbin.io/v3/b/6727ca99e41b4d34e44dc2a9?meta=false')
         fetch('posts.json') //Fetch data from local JSON file
         .then((response) => response.json())
-        .then(json => {                                 
+        .then(json => {                      
             let asideL = document.createElement("aside");      
             let main = document.createElement("main"); 
             let asideR = document.createElement("aside");      
