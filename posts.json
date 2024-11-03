@@ -33,5 +33,40 @@
         "postTime": "Sept 4, 2024",
         "postText": "Looking another student with car to share a ride with to Tallinn. Besides company, willing to split the gas bill of course.",
         "postImg" : ""
+    },
+    {
+        "postId": 6,
+        "posterName": "Alyssa M.",
+        "postTime": "Oct 5, 2024",
+        "postText": "Just finished a long study session at the library. Ready for a coffee break!",
+        "postImg": ""
+    },
+    {
+        "postId": 7,
+        "posterName": "Finn K.",
+        "postTime": "Oct 3, 2024",
+        "postText": "Saw the northern lights last night! Unforgettable experience.",
+        "postImg": "img/northern-lights.jpg"
+    },
+    {
+        "postId": 8,
+        "posterName": "Elena W.",
+        "postTime": "Oct 1, 2024",
+        "postText": "Bought some fresh flowers for my room today. Such a small thing, but it brightens up the place!",
+        "postImg": "img/flowers.jpg" 
+    },
+    {
+        "postId": 9,
+        "posterName": "GamerDude47",
+        "postTime": "Sept 29, 2024",
+        "postText": "Anyone up for a game of Valorant this weekend? Looking for teammates!",
+        "postImg": ""
+    },
+    {
+        "postId": 10,
+        "posterName": "Julia F.",
+        "postTime": "Sept 25, 2024",
+        "postText": "Spent the weekend visiting my grandparents. Nothing like grandma’s cooking!",
+        "postImg": "img/grandma-cooking.jpg" 
     }
 ]
