@@ -68,5 +68,12 @@
         "postTime": "Sept 25, 2024",
         "postText": "Spent the weekend visiting my grandparents. Nothing like grandma’s cooking!",
         "postImg": "img/grandma-cooking.jpg" 
+    },
+    {
+        "postId": 11,
+        "posterName": "Laivi Tuvahe",
+        "postTime": "Nov 2, 2024",
+        "postText": "The talks were succesful and big money is coming!",
+        "postImg": "img/labiraakimised.png" 
     }
 ]
