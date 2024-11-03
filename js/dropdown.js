@@ -10,7 +10,7 @@
 // Lisa klikkimise sündmus kasutaja logo külge
 document.getElementById('userLogo').addEventListener('click', toggleDropdown);
 
-// Sulge rippmenüü, kui klikitakse väljaspool
+// Sulge rippmenüü, kui klikitakse väljaspool 
 window.addEventListener('click', function(event) {
     const dropdownMenu = document.getElementById('dropdownMenu');
     const userLogo = document.getElementById('userLogo');
