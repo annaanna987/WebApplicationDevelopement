@@ -1,0 +1,101 @@
+[
+    {   
+        "id": 1,
+        "postId": 1,
+        "posterName": "MathiasK",
+        "postTime": "Oct 2, 2024",
+        "postText": "Sunset at Bixabay",
+        "postImg" : "img/pexels-pixabay-289586.jpg",
+        "postLikes": 27
+    },
+    {   
+        "id": 2,
+        "postId": 2,
+        "posterName": "ServerForge235",
+        "postTime": "Sept 27, 2024",
+        "postText": "Server maintance scheduled for tomorrow late night. 3 day testing window opened from tomorrow morning to test new configuration.",
+        "postImg" : "",
+        "postLikes": 92
+    },
+    {   
+        "id": 3,
+        "postId": 3,
+        "posterName": "Veronica V.",
+        "postTime": "Sept 20, 2024",
+        "postText": "Looking ekstra members for lab on Tarkvaratehnika. Contact me through phone 544335634556 or find me slack please on Tarkvaratehnika 2024 workspace.",
+        "postImg" : "",
+        "postLikes": 22
+    },
+    {   
+        "id": 4,
+        "postId": 4,
+        "posterName": "Philip J.",
+        "postTime": "Sept 19, 2024",
+        "postText": "Met a squirrel doing on about his business during my hike on woods. Wanted to share :]",
+        "postImg" : "img/squirrel.webp",
+        "postLikes": 345
+    },
+    {   
+        "id": 5,
+        "postId": 5,
+        "posterName": "Peter Forest",
+        "postTime": "Sept 4, 2024",
+        "postText": "Looking another student with car to share a ride with to Tallinn. Besides company, willing to split the gas bill of course.",
+        "postImg" : "",
+        "postLikes": 67
+    },
+    {   
+        "id": 6,
+        "postId": 6,
+        "posterName": "Alyssa M.",
+        "postTime": "Oct 5, 2024",
+        "postText": "Just finished a long study session at the library. Ready for a coffee break!",
+        "postImg": "",
+        "postLikes": 67
+    },
+    {   
+        "id": 7,
+        "postId": 7,
+        "posterName": "Finn K.",
+        "postTime": "Oct 3, 2024",
+        "postText": "Saw the northern lights last night! Unforgettable experience.",
+        "postImg": "img/northern-lights.jpg",
+        "postLikes": 332
+    },
+    {   
+        "id": 8,
+        "postId": 8,
+        "posterName": "Elena W.",
+        "postTime": "Oct 1, 2024",
+        "postText": "Bought some fresh flowers for my room today. Such a small thing, but it brightens up the place!",
+        "postImg": "img/flowers.jpg" ,
+        "postLikes": 87
+    },
+    {   
+        "id": 9,
+        "postId": 9,
+        "posterName": "GamerDude47",
+        "postTime": "Sept 29, 2024",
+        "postText": "Anyone up for a game of Valorant this weekend? Looking for teammates!",
+        "postImg": "",
+        "postLikes": 33
+    },
+    {   
+        "id": 10,
+        "postId": 10,
+        "posterName": "Julia F.",
+        "postTime": "Sept 25, 2024",
+        "postText": "Spent the weekend visiting my grandparents. Nothing like grandma’s cooking!",
+        "postImg": "img/grandma-cooking.jpg",
+        "postLikes": 223
+    },
+    {   
+        "id": 11,
+        "postId": 11,
+        "posterName": "Laivi Tuvahe",
+        "postTime": "Nov 2, 2024",
+        "postText": "The talks were succesful and big money is coming!",
+        "postImg": "img/labiraakimised.png",
+        "postLikes": 125
+    }
+]
