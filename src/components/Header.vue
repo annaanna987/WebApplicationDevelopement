@@ -5,7 +5,7 @@
         <div>
           <p><a href="/"><router-link to="/">Home</router-link></a></p>
           <p>|</p>
-          <p><a href="/addPost"><router-link to="/login">Log in</router-link></a></p>
+          <p><a href="/addPost"><router-link to="/login">Sign up</router-link></a></p>
         </div>        
         <div class="dropdown">
           <a href="#" class="userLogo" id="userLogo">

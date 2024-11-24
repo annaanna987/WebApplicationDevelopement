@@ -1,20 +1,18 @@
 <template>
-    <main id="login">
+    <main id="signup">
     <form action="index.html" class="form-container">
         <h1>Welcome to PostIt</h1>
-        <a href="">Create an account</a>
-        <p>or<br>Please log in</p>
+        <p>Sign up</p>
         <input type="text" class="input-field" placeholder="Email" id="email" required>
         <input type="password" class="input-field" placeholder="Password" id="password" required>
-        <p><button id="login-button">Log in</button></p>        
-        <a href="" class="accAndforgotLinks">Forgot password?</a>
+        <p><button id="signup-button">Sign up</button></p>
     </form>
     </main>
 </template>
 
 <script>
 export default {
-  name: 'Login'   
+  name: 'signup'   
 }
 </script>
 
