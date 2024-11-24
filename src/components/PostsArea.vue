@@ -3,7 +3,7 @@
         <aside></aside>        
         <div id="postsContainer">
             <div v-if="posts.length == 0"  class="loading">
-                    Loading posts ...
+                    Loading posts...
             </div>
             <div v-else v-for="post in posts" :key="post.id" class="postinfo">
                 <Post :post="post" />
@@ -27,14 +27,7 @@ export default {
     }
   },
   mounted() {
-    this.$store.dispatch('fetchPosts');
-    /*
-    // Local JSON
-    fetch('http://localhost:3000/posts')
-      .then(res => res.json())
-      .then(data => this.posts = data)
-      .catch(err => console.error(err.message))
-    */
+    this.$store.dispatch('fetchPosts');   
   },
   methods: {
     resetLikes() {
@@ -64,6 +57,13 @@ aside{
 #postsContainer{
     display: flex;
     flex-direction: column;
+}
+.loading{
+   font-size: 20px;
+   color: blue;
+   background-color: rgba(255, 0, 0) ;   
+   border-radius: 5px;
+   margin: 5px;
 }
 .resetButton{
   display: flex;

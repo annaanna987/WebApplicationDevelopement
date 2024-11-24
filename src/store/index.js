@@ -22,20 +22,26 @@ export default createStore({
   },
   actions: {
     fetchPosts({ commit }) {
-      console.log('fetching posts')
+      console.log('Trying to fetch posts')
+      
+      //Local JSON fetching from public folder
+      fetch('/json/posts.json') 
+        .then(res => res.json())
+        .then(posts => commit("setPosts", posts))
+        .catch(err => console.error(err.message))
+      console.log('Fetching posts complete!')   
+      }
+         
+      
       /*
-      // Local JSON
-      fetch('http://localhost:3000/posts')
-      .then(res => res.json())
-      .then(posts => commit("setPosts", posts))
-      .catch(err => console.error(err.message))
-      */
-
+      //Remote API fetching
       return fetch('https://api.jsonbin.io/v3/b/6727ca99e41b4d34e44dc2a9?meta=false')
         .then(res => res.json())
         .then(data => commit("setPosts", data))
         .catch(err => console.error(err.message));
+      console.log('Fetching posts complete!')    
     }
+      */
 
   },
   modules: {
