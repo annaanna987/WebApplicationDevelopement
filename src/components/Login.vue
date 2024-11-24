@@ -19,6 +19,12 @@
         required
       />
       <p><button id="signup-button" type="submit">Sign up</button></p>
+      <div v-if="errors.length" class="error-messages">
+        <p>Password is invalid:</p>
+        <ul>
+          <li v-for="(error, index) in errors" :key="index">{{ error }}</li>
+        </ul>
+      </div>
     </form>
   </main>
 </template>
@@ -29,33 +35,37 @@ export default {
   data() {
     return {
       password: "",
+      errors: [], // To store validation error messages
     };
   },
   methods: {
     validatePassword() {
-      // Password validation rules
-      const errors = [];
+      // Clear previous errors
+      this.errors = [];
+
+      // Validation rules
       if (this.password.length < 8 || this.password.length > 15) {
-        errors.push("Password must be 8-15 characters long.");
+        this.errors.push("Password must be 8-15 characters long.");
+      }
+      if (!/^[A-Z]/.test(this.password)) {
+        this.errors.push("Password must start with an uppercase letter.");
       }
       if (!/[A-Z]/.test(this.password)) {
-        errors.push("Password must contain at least one uppercase letter.");
+        this.errors.push("Password must contain at least one uppercase letter.");
       }
-      if (!/[a-z]/.test(this.password)) {
-        errors.push("Password must contain at least one lowercase letter.");
+      if ((this.password.match(/[a-z]/g) || []).length < 2) {
+        this.errors.push("Password must contain at least two lowercase letters.");
       }
       if (!/\d/.test(this.password)) {
-        errors.push("Password must contain at least one number.");
+        this.errors.push("Password must contain at least one numeric value.");
       }
-      if (!/[_]/.test(this.password)) {
-        errors.push("Password must contain _.");
+      if (!/_/.test(this.password)) {
+        this.errors.push("Password must include the character '_'.");
       }
 
-      // Show popup if errors exist
-      if (errors.length > 0) {
-        alert(`The password is invalid:\n\n${errors.join("\n")}`);
-      } else {
-        // Redirect to the main page on success
+      // Check if there are any errors
+      if (this.errors.length === 0) {
+        // Redirect to main page on success
         alert("Sign-up successful!");
         window.location.href = "index.html";
       }
@@ -77,6 +87,7 @@ export default {
   max-width: 500px;
   border-radius: 8px;
 }
+
 
 .input-field {
   width: 100%;
@@ -117,5 +128,15 @@ p {
 p button {
   display: inline-block;
   margin-top: 10px;
+}
+
+.error-messages {
+  color: red;
+  margin-top: 10px;
+}
+
+.error-messages ul {
+  margin: 0;
+  padding-left: 20px;
 }
 </style>
